@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "t04-01-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "Sweet\r\n2",
+      "output": "085121103103118\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t04-01-02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "just4CODES\r\n258",
+      "output": "109120118119055070082071072086\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t04-01-03",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "Sweet Lollipops\r\n5",
+      "output": "088124106106121037081116113113110117116117120\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t04-01-04",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "(Good-Day)\r\n256",
+      "output": "041072112112101046069098122042\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t04-02-01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "Sweet\r\n2",
+      "output": "085121103103118\r\nUyggv\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t04-02-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "123yes\r\n-3",
+      "output": "046047048118098112\r\n./0vbp\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t04-02-03",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "You, me, & C\r\n-255",
+      "output": "089111117044032109101044032038032067\r\nYou, me, & C\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t04-02-04",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "morning|coffee\r\n-257",
+      "output": "107109112108103108101122097109100100099099\r\nkmplglezamddcc\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    }
+  ]
+}
