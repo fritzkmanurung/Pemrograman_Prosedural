@@ -1,0 +1,134 @@
+{
+  "tests": [
+    {
+      "name": "t02-01-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "3\r\n5000",
+      "output": "---\r\n15000.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t02-01-02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "15\r\n10000",
+      "output": "15000.00\r\n135000.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t02-01-03",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "50\r\n50000",
+      "output": "375000.00\r\n2125000.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t02-01-04",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "10\r\n10000",
+      "output": "5000.00\r\n95000.00\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t02-02-01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "1",
+      "output": "staple food\r\nyou need side dishes\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 4
+    },
+    {
+      "name": "t02-02-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "2",
+      "output": "side dishes\r\nstaple food\r\nyou need vegetables\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 4
+    },
+    {
+      "name": "t02-02-03",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "3",
+      "output": "vegetables\r\nside dishes\r\nstaple food\r\ngood\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 4
+    },
+    {
+      "name": "t02-02-04",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "4",
+      "output": "fruits\r\nvegetables\r\nside dishes\r\nstaple food\r\nvery good\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 4
+    },
+    {
+      "name": "t02-02-05",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "5",
+      "output": "milk\r\nfruits\r\nvegetables\r\nside dishes\r\nstaple food\r\nperfect\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 4
+    },
+    {
+      "name": "t03-03-01",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "+\r\n1\r\n2\r\n3\r\n4",
+      "output": "1\r\n3\r\n6\r\n10\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t03-03-02",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "-\r\n2\r\n3\r\n4\r\n5",
+      "output": "2\r\n1\r\n3\r\n2\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t03-03-03",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "*\r\n1\r\n2\r\n3\r\n4",
+      "output": "1\r\n2\r\n6\r\n24\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    },
+    {
+      "name": "t03-03-04",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "+\r\n-1",
+      "output": "0\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 10
+    }
+  ]
+}
