@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "test_06-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "",
+      "output": "Students:\r\n12S20999#Wiro Sableng#2020#Information Systems#MALE\r\n12S18019#Novita Hutapea#2018#Information Systems#FEMALE\r\n12S19023#Irfan Siregar#2019#Information Systems#MALE\r\n12S20030#Lamsihar Siahaan#2020#Information Systems#FEMALE\r\n12S21056#Endang Siregar#2021#Information Systems#FEMALE\r\n11319002#Asido Agripo Panjaitan#2019#Information Technology#MALE\r\n11319014#Alex Sander Hutapea#2019#Information Technology#MALE\r\n13319004#Sotar Dodo#2019#Computer Technology#MALE\r\n21S20031#Aldi Sitorus#2020#Engineering Management#MALE\r\n31S20020#Friskila Ariyanty#2020#Bioprocess Engineering#FEMALE\r\n\r\nDorms:\r\nPniel#10#Available#For Female\r\nSilo#10#Available#For Male\r\nKapernaum#10#Available#For Male\r\nMamre#10#Available#For Female\r\n",
+      "comparison": "exact",
+      "timeout": 2,
+      "points": 20
+    },
+    {
+      "name": "test_06-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "",
+      "output": "Students:\r\n12S20999#Wiro Sableng#2020#Information Systems#MALE\r\n12S18019#Novita Hutapea#2018#Information Systems#FEMALE\r\n12S19023#Irfan Siregar#2019#Information Systems#MALE\r\n12S20030#Lamsihar Siahaan#2020#Information Systems#FEMALE\r\n12S21056#Endang Siregar#2021#Information Systems#FEMALE\r\n11319002#Asido Agripo Panjaitan#2019#Information Technology#MALE\r\n11319014#Alex Sander Hutapea#2019#Information Technology#MALE\r\n13319004#Sotar Dodo#2019#Computer Technology#MALE\r\n21S20031#Aldi Sitorus#2020#Engineering Management#MALE\r\n31S20020#Friskila Ariyanty#2020#Bioprocess Engineering#FEMALE\r\n\r\nDorms:\r\nPniel#10#Available#For Female\r\nSilo#10#Available#For Male\r\nKapernaum#10#Available#For Male\r\nMamre#10#Available#For Female\r\n\r\nPniel#6#Available#For Female\r\n12S18019#Novita Hutapea#2018#Information Systems\r\n12S20030#Lamsihar Siahaan#2020#Information Systems\r\n12S21056#Endang Siregar#2021#Information Systems\r\n31S20020#Friskila Ariyanty#2020#Bioprocess Engineering\r\n\r\nSilo#4#Available#For Male\r\n12S20999#Wiro Sableng#2020#Information Systems\r\n12S19023#Irfan Siregar#2019#Information Systems\r\n11319002#Asido Agripo Panjaitan#2019#Information Technology\r\n11319014#Alex Sander Hutapea#2019#Information Technology\r\n13319004#Sotar Dodo#2019#Computer Technology\r\n21S20031#Aldi Sitorus#2020#Engineering Management\r\n\r\nKapernaum#10#Available#For Male\r\n0\r\n\r\nMamre#10#Available#For Female\r\n0\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 40
+    },
+    {
+      "name": "test_06-03",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "",
+      "output": "Students:\r\n12S20999#Wiro Sableng#2020#Information Systems#MALE\r\n12S18019#Novita Hutapea#2018#Information Systems#FEMALE\r\n12S19023#Irfan Siregar#2019#Information Systems#MALE\r\n12S20030#Lamsihar Siahaan#2020#Information Systems#FEMALE\r\n12S21056#Endang Siregar#2021#Information Systems#FEMALE\r\n11319002#Asido Agripo Panjaitan#2019#Information Technology#MALE\r\n11319014#Alex Sander Hutapea#2019#Information Technology#MALE\r\n13319004#Sotar Dodo#2019#Computer Technology#MALE\r\n21S20031#Aldi Sitorus#2020#Engineering Management#MALE\r\n31S20020#Friskila Ariyanty#2020#Bioprocess Engineering#FEMALE\r\n\r\nDorms:\r\nPniel#3#Available#For Female\r\nSilo#3#Available#For Male\r\nKapernaum#3#Available#For Male\r\nMamre#3#Available#For Female\r\n\r\nPniel#0#Not Available#For Female\r\n12S18019#Novita Hutapea#2018#Information Systems\r\n12S20030#Lamsihar Siahaan#2020#Information Systems\r\n12S21056#Endang Siregar#2021#Information Systems\r\n\r\nSilo#0#Not Available#For Male\r\n12S20999#Wiro Sableng#2020#Information Systems\r\n12S19023#Irfan Siregar#2019#Information Systems\r\n11319002#Asido Agripo Panjaitan#2019#Information Technology\r\n\r\nKapernaum#0#Not Available#For Male\r\n11319014#Alex Sander Hutapea#2019#Information Technology\r\n13319004#Sotar Dodo#2019#Computer Technology\r\n21S20031#Aldi Sitorus#2020#Engineering Management\r\n\r\nMamre#2#Available#For Female\r\n31S20020#Friskila Ariyanty#2020#Bioprocess Engineering\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 40
+    }
+  ]
+}
