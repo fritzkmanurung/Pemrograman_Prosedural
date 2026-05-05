@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "t01-01-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "200\r\nK\r\n-15\r\n14.12345\r\n",
+      "output": "200\r\nK\r\n-15\r\n14.123\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t01-01-02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "0\r\n+\r\n100\r\n9.01\r\n",
+      "output": "0\r\n+\r\n100\r\n9.010\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t01-02-01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "16.12\r\n29.3311\r\n-6.6789\r\n0.0\r\n",
+      "output": "38.772\r\n9.693\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t01-02-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "0.0\r\n0.0\r\n0.0\r\n1\r\n",
+      "output": "1.000\r\n0.250\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 15
+    },
+    {
+      "name": "t01-03-01",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "176\r\n4\r\n11\r\n",
+      "output": "11\r\n1\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t01-03-02",
+      "setup": "make compile",
+      "run": "make -s test_03",
+      "input": "24\r\n3\r\n4\r\n",
+      "output": "3\r\n0\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
