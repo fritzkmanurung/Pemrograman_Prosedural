@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "q01-01-01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "a,a,a,c,c,b,b,b,z,d\r\n",
+      "output": "a,a,a,b,b,b,c,c,d,z\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "q01-01-02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "k\r\n",
+      "output": "k\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "q01-02-01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "a,a,a,c,c,b,b,b,z,d\r\n",
+      "output": "z,d,c,c,b,b,b,a,a,a\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "q01-02-02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "l,u,q,r,d,n,n,o,d,u,v,k,j,d,d,t,o,j,b,r,c,r,r,w,k,q,i,p,c,p,a,p,d,k,d,b,c,o,u,z,n,w,g,l,y,a,h,o,h,k\r\n",
+      "output": "z,y,w,w,v,u,u,u,t,r,r,r,r,q,q,p,p,p,o,o,o,o,n,n,n,l,l,k,k,k,k,j,j,i,h,h,g,d,d,d,d,d,d,c,c,c,b,b,a,a\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "q01-02-03",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "b,l,u,s,w,q,p,a,k,j,j,r,e,z,q,t,y,m,w,q,c,j,f,y,t,y,z,t,f,g,e,x,y,j,c,u,x,j,j,t,w,f,a,y,p,k,q,y,a,y\r\n",
+      "output": "z,z,y,y,y,y,y,y,y,x,x,w,w,w,u,u,t,t,t,t,s,r,q,q,q,q,p,p,m,l,k,k,j,j,j,j,j,j,g,f,f,f,e,e,c,c,b,a,a,a\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
