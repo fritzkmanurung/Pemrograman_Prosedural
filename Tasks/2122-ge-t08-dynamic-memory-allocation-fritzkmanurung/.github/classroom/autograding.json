@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "t08&#45;01&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "student-add#12S21001#Dhino Turnip#2021#male\r\nstudent-add#12S21002#Marudut Tampubolon#2021#male\r\nstudent-add#12S21003#Jusas Tampubolon#2021#male\r\nstudent-print-all\r\nstudent-add#12S21004#Estomihi pangaribuan#2021#male\r\nstudent-add#12S21006#Weny Sitinjak#2021#female\r\nstudent-add#12S21007#Dame Sitinjak#2021#female\r\nstudent-add#12S21008#Tuani Manurung#2021#male\r\nstudent-add#12S21009#Mikhael Pakpahan#2021#male\r\nstudent-add#12S21010#Bobby Siagian#2021#male\r\nstudent-add#12S21011#Aldi Simamora#2021#male\r\nstudent-print-all\r\n---\r\n",
+      "output": "12S21001|Dhino Turnip|2021|male\r\n12S21002|Marudut Tampubolon|2021|male\r\n12S21003|Jusas Tampubolon|2021|male\r\n12S21001|Dhino Turnip|2021|male\r\n12S21002|Marudut Tampubolon|2021|male\r\n12S21003|Jusas Tampubolon|2021|male\r\n12S21004|Estomihi pangaribuan|2021|male\r\n12S21006|Weny Sitinjak|2021|female\r\n12S21007|Dame Sitinjak|2021|female\r\n12S21008|Tuani Manurung|2021|male\r\n12S21009|Mikhael Pakpahan|2021|male\r\n12S21010|Bobby Siagian|2021|male\r\n12S21011|Aldi Simamora|2021|male\r\n",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "t08&#45;01&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_01",
+      "input": "student-add#12S21001#Dhino Turnip#2021#male\r\nstudent-add#12S21002#Marudut Tampubolon#2021#male\r\nstudent-add#12S21003#Jusas Tampubolon#2021#male\r\nstudent-add#12S21006#Weny Sitinjak#2021#female\r\nstudent-add#12S21004#Estomihi pangaribuan#2021#male\r\nstudent-add#12S21007#Dame Sitinjak#2021#female\r\nstudent-add#12S21008#Tuani Manurung#2021#male\r\nstudent-print-all\r\nstudent-add#12S21009#Mikhael Pakpahan#2021#male\r\nstudent-add#12S21010#Bobby Siagian#2021#male\r\nstudent-add#12S21011#Aldi Simamora#2021#male\r\nstudent-print-all\r\n---\r\n",
+      "output": "12S21001|Dhino Turnip|2021|male\r\n12S21002|Marudut Tampubolon|2021|male\r\n12S21003|Jusas Tampubolon|2021|male\r\n12S21006|Weny Sitinjak|2021|female\r\n12S21004|Estomihi pangaribuan|2021|male\r\n12S21007|Dame Sitinjak|2021|female\r\n12S21008|Tuani Manurung|2021|male\r\n12S21001|Dhino Turnip|2021|male\r\n12S21002|Marudut Tampubolon|2021|male\r\n12S21003|Jusas Tampubolon|2021|male\r\n12S21006|Weny Sitinjak|2021|female\r\n12S21004|Estomihi pangaribuan|2021|male\r\n12S21007|Dame Sitinjak|2021|female\r\n12S21008|Tuani Manurung|2021|male\r\n12S21009|Mikhael Pakpahan|2021|male\r\n12S21010|Bobby Siagian|2021|male\r\n12S21011|Aldi Simamora|2021|male\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t08&#45;02&#45;01",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "dorm-add#Pniel#20#female\r\ndorm-add#Kapernaum#20#male\r\ndorm-print-all\r\ndorm-add#Antiokia#20#male\r\ndorm-print-all\r\n---\r\n",
+      "output": "Pniel|20|female\r\nKapernaum|20|male\r\nPniel|20|female\r\nKapernaum|20|male\r\nAntiokia|20|male\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t08&#45;02&#45;02",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "dorm-add#Pniel#20#female\r\ndorm-add#Kapernaum#20#male\r\ndorm-print-all\r\ndorm-add#Antiokia#20#male\r\ndorm-add#Mamre#20#male\r\ndorm-add#Silo#20#male\r\ndorm-add#Mahanaim#20#male\r\ndorm-add#Nazaret#20#male\r\ndorm-print-all\r\n---\r\n",
+      "output": "Pniel|20|female\r\nKapernaum|20|male\r\nPniel|20|female\r\nKapernaum|20|male\r\nAntiokia|20|male\r\nMamre|20|male\r\nSilo|20|male\r\nMahanaim|20|male\r\nNazaret|20|male\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "t08&#45;02&#45;03",
+      "setup": "make compile",
+      "run": "make -s test_02",
+      "input": "student-print-all\r\ndorm-print-all\r\nstudent-add#12S21001#Dhino Turnip#2021#male\r\nstudent-add#12S21002#Marudut Tampubolon#2021#male\r\nstudent-add#12S21003#Jusas Tampubolon#2021#male\r\nstudent-add#12S21004#Estomihi pangaribuan#2021#male\r\nstudent-add#12S21006#Weny Sitinjak#2021#female\r\nstudent-add#12S21007#Dame Sitinjak#2021#female\r\nstudent-add#12S21008#Tuani Manurung#2021#male\r\ndorm-add#Pniel#20#female\r\ndorm-add#Kapernaum#20#male\r\ndorm-print-all\r\nstudent-add#12S21009#Mikhael Pakpahan#2021#male\r\nstudent-add#12S21010#Bobby Siagian#2021#male\r\nstudent-add#12S21011#Aldi Simamora#2021#male\r\nstudent-print-all\r\ndorm-add#Antiokia#20#male\r\ndorm-add#Mamre#20#male\r\ndorm-add#Silo#20#male\r\ndorm-add#Mahanaim#20#male\r\ndorm-add#Nazaret#20#male\r\ndorm-print-all\r\n---\r\n",
+      "output": "Pniel|20|female\r\nKapernaum|20|male\r\n12S21001|Dhino Turnip|2021|male\r\n12S21002|Marudut Tampubolon|2021|male\r\n12S21003|Jusas Tampubolon|2021|male\r\n12S21004|Estomihi pangaribuan|2021|male\r\n12S21006|Weny Sitinjak|2021|female\r\n12S21007|Dame Sitinjak|2021|female\r\n12S21008|Tuani Manurung|2021|male\r\n12S21009|Mikhael Pakpahan|2021|male\r\n12S21010|Bobby Siagian|2021|male\r\n12S21011|Aldi Simamora|2021|male\r\nPniel|20|female\r\nKapernaum|20|male\r\nAntiokia|20|male\r\nMamre|20|male\r\nSilo|20|male\r\nMahanaim|20|male\r\nNazaret|20|male\r\n",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
